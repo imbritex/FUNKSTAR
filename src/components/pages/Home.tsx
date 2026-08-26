@@ -18,31 +18,12 @@ export const Home = () => {
         </p>
 
         <div className="mt-6 flex flex-col items-center gap-4">
-          <div className="flex md:flex-row flex-col items-center gap-4 md:gap-8">
-            <a href="/global-chat">
-              <button className="transition-transform hover:scale-105 active:scale-95 cursor-pointer bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm hover:bg-white/20 border-none text-2xl font-bold font-options">
-                Global Chat
-              </button>
-            </a>
-            <a href="/mods">
-              <button className="transition-transform hover:scale-105 active:scale-95 cursor-pointer bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm hover:bg-white/20 border-none text-2xl font-bold font-options">
-                Discover Mods
-              </button>
-            </a>
-          </div>
-          <a href="/signup" className="mt-2">
+          <a href="/mods">
             <button className="transition-transform hover:scale-105 active:scale-95 cursor-pointer bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm hover:bg-white/20 border-none text-2xl font-bold font-options">
-              Sign Up
+              Discover Mods
             </button>
           </a>
         </div>
-
-        <a 
-          href="/about" 
-          className="block mt-4 font-options text-[3rem] text-muted no-underline text-center tracking-[0.05em] transition-colors hover:text-muted-hover"
-        >
-          About the Site
-        </a>
 
       </div>
     </div>
