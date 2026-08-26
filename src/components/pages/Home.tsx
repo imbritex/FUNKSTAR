@@ -1,5 +1,6 @@
 import React from 'react'
 import { Portrait } from '../organisms/Portrait'
+import { SplashText } from '../atoms/SplashText'
 import funkstarLogo from '@assets/images/ui/funkstar_logo.webp'
 
 /**
@@ -12,9 +13,7 @@ export const Home = () => {
       
       <div className="flex flex-col items-center justify-center min-h-screen relative z-[101]">
         <img src={funkstarLogo} alt="Funkstar" className="w-[80vw] max-w-[600px] mb-2 drop-shadow-lg pointer-events-none select-none" draggable={false} />
-        <p className="text-[2rem] md:text-5xl text-center text-muted font-options font-bold drop-shadow-md mb-0">
-          Easier, faster and simpler.
-        </p>
+        <SplashText />
 
         <div className="mt-6 flex flex-col items-center gap-4">
           <a href="/mods">
