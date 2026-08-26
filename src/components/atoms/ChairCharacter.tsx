@@ -1,6 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import Phaser from 'phaser'
 import animationsData from '@assets/animations/chair-animations.json'
+import shockAudio from '@audio/ui/electric_chair/bf/electrocution.wav'
+
+let chairChar = ["bf", "gf", "pinhead"];
+let rdmNumber = getRandomInt(3);
 
 interface AnimData {
   state: string
@@ -19,7 +23,16 @@ interface ChairCharacterProps {
   character?: string
 }
 
-export const ChairCharacter: React.FC<ChairCharacterProps> = ({ character = 'bf' }) => {
+function playAudio(audio){
+    audio = new Audio(audio).play()
+    audio.currentTime = 0;
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+export const ChairCharacter: React.FC<ChairCharacterProps> = ({ character = chairChar[rdmNumber] }) => {
   const gameRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -176,6 +189,7 @@ export const ChairCharacter: React.FC<ChairCharacterProps> = ({ character = 'bf'
         sprite.on('pointerdown', () => {
           console.log('[Phaser] Sprite clicked!')
           const electroKey = `${character}-electrocuted-anim`
+          playAudio(shockAudio)
           
           if (this.anims.exists(electroKey)) {
             console.log(`[Phaser] Playing ${electroKey}`)

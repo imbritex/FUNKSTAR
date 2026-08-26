@@ -7,7 +7,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@atomic': path.resolve(__dirname, './src/components'),
-      '@assets': path.resolve(__dirname, './src/assets')
+      '@assets': path.resolve(__dirname, './src/assets'),
+      '@audio': path.resolve(__dirname, './src/assets/audios')
     }
   }
 })
