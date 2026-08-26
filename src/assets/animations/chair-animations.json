@@ -1,0 +1,26 @@
+[
+  {
+    "name": "bf",
+    "animations": [
+      {
+        "state": "idle",
+        "file": "bf-chair-idle",
+        "prefix": "bf idle",
+        "offsets": [60, 0]
+      },
+      {
+        "state": "electrocuted",
+        "file": "bf-chair-electrocuted",
+        "prefix": "bf electrocuted",
+        "offsets": [100, 0]
+      },
+      {
+        "state": "crispy",
+        "file": "bf-chair-crispy",
+        "prefix": "crispy bf anim",
+        "offsets": [60, 0],
+        "loopLastFrames": 3
+      }
+    ]
+  }
+]

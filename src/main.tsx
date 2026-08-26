@@ -11,7 +11,7 @@ import './index.css'
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen w-full text-white font-sans overflow-x-hidden">
+      <div className="min-h-[100dvh] w-full text-white font-sans overflow-x-hidden">
         <Atomic.Atoms.Background />
         
         <Routes>
