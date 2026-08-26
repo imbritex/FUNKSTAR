@@ -20,7 +20,7 @@ export const Home = () => {
         <div className="mt-6 flex flex-col items-center gap-4">
           <a href="/mods">
             <button className="transition-transform hover:scale-105 active:scale-95 cursor-pointer bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm hover:bg-white/20 border-none text-2xl font-bold font-options">
-              Discover Mods
+              Browse Mods
             </button>
           </a>
         </div>
