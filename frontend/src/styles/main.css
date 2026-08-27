@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Linglong';
+  src: url('/fonts/linglong.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'FunkinOptions';
+  src: url('/fonts/funkin-options.otf') format('opentype');
+}
+
+body {
+  background: url('/images/bg.svg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 0;
+}
+
+.centered {
+	width: max-content;
+	height: max-content;
+
+	margin-left: auto;
+	margin-right: auto;
+}

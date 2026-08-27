@@ -1,5 +1,8 @@
+# PNPM Dependencies
 node_modules
 
-# Editor directories and files
-.vscode/*
-dist/
+# Output
+dist
+
+# dotenv Environment
+.env
