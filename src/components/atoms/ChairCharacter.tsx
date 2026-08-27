@@ -23,12 +23,14 @@ interface ChairCharacterProps {
   character?: string
 }
 
-function playAudio(audio){
-    audio = new Audio(audio).play()
-    audio.currentTime = 0;
+function playAudio(filePath:string):HTMLAudioElement {
+  let audio = new Audio(filePath);
+  audio.currentTime = 0;
+  audio.play();
+  return audio;
 }
 
-function getRandomInt(max) {
+function getRandomInt(max:number) {
   return Math.floor(Math.random() * max);
 }
 
